@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinalProject</title>
+    <style>
+      h1 {
+      text-align: justify;
+        color: #444E76;
+        font-family: Rockwell,courier bold,Courier,Georgia,Times,times new roman,serif;
+              direction: ltr;
+    unicode-bidi: isolate;
+    vertical-align: baseline;
+            line-height: 1;
+             
+    justify-content: space-between;
+        vertical-align: baseline;
+    font-size: clamp(5vw,30%,12.5vw);
+    padding: 10px;
+    margin:5px;
+    
+   
+   
+              
+      }
+      h2 {
+        text-align: center;
+        border: 5px solid #5D81C7;
+        padding: 17px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: Rockwell,courier bold,Courier,Georgia,Times,times new roman,serif;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #409268;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 350ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #E84132;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Woman <br/> 
+        Life <br/>
+        Freedom
+
+      </h1>
+      <h2>In the Name of Freedom </h2>
+      <img
+        src="https://www.womanlifefreedom.today/download/artwork/Stand-With-Iran_Mahdis-Nikou.jpg"
+        alt="womanlifefreedom"
+      />
+      <p>
+     Global action in solidarity with Iranian women & girls who are courageously demonstrating peacefully for their fundamental human rights.
+
+      </p>
+      <a
+        href="https://www.womanlifefreedom.today/"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more 
+      </a>
+      <br />
+      <button class="buy-button">Welcome</button>
+      
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("what is your name??");
+        let email = prompt("what is your email??");
+        
+
+        alert(
+          "Hello  " +
+            name +
+            "!! we will send you the latest news by email, Thanks for visiting our website ❤"
+            
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
